@@ -3,7 +3,11 @@
 <meta charset="utf-8">
 
 <head>
-  
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+
   <p>
   <meta http-equiv="refresh" content="300">
   </p>
@@ -20,20 +24,69 @@
 
   <title>너랑 유미랑</title>
 
+  <style>
+
+  a {
+    font-family: 'Do Hyeon', sans-serif;
+    color : black;
+    text-decoration : none;
+  }
+
+  h1 {
+    font-size : 80px;
+    text-align : center;
+    padding : 20px;
+    margin : 0px;
+    border-bottom : 5px solid black;
+  }
+
+  .semi{
+    text-align : center;
+    display : inline;
+    font-size : 40px;
+    padding : 80px;
+    padding-top : 10px;
+    padding-bottom : 10px;
+    border : 5px solid black;
+    border-top : 0px;
+  }
+
+  #grid{
+    display : grid;
+    grid-template-columns : 1fr 1fr 1fr 1fr;
+  }
+
+  #skill{
+    border-left : 0px;
+    border-right : 0px;
+  }
+
+  #skin{
+    border-right : 0px;
+  }
+
+  #picture{
+    text-align: center;
+  }
+
+  </style>
+
 </head>
 
 <body>
 
-  <img src="유미.jpg" width="450">
-  <h1><a href="index.html">유미 보고서</a></h1>
-  <ul>
-    <li><a href="1스토리.html">스토리</a></li>
-    <li><a href="2스킬.html">스킬</a></li>
-    <li><a href="3스킨.html">스킨</a></li>
-  </ul>
-  <p>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/a3KJ2c2QmgM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  </p>
+  <h1><a href="index.html">너랑 유미랑</a></h1>
+
+  <div id="grid">
+    <a href="1스토리.html" class="semi">스토리</a>
+    <a href="2스킬.html" class="semi" id="skill">스킬</a>
+    <a href="3스킨.html" class="semi" id="skin">스킨</a>
+    <a href="4트레일러.html" class="semi">트레일러</a>
+  </div><br>
+
+  <div id="picture">
+  <img src="유미.jpg" width="1000">
+  </div>
 
   <p> <!-- 댓글 호스팅 -->
       <div id="disqus_thread"></div>
