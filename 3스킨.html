@@ -1,13 +1,116 @@
 <!DOCTYPE html>
 <html>
 <meta charset="utf-8">
+
 <head>
-<img src="유미.jpg" width="450">
-<title>유미 스킨</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+
+  <p>
+  <meta http-equiv="refresh" content="300">
+  </p>
+
+  <p> <!-- 구글 방문 분석기 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HLS56EYYMB"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-HLS56EYYMB');
+    </script>
+  </p>
+
+  <title>너랑 유미랑</title>
+
+  <style>
+
+  a {
+    font-family: 'Do Hyeon', sans-serif;
+    color : black;
+    text-decoration : none;
+  }
+
+  h1 {
+    font-size : 80px;
+    text-align : center;
+    padding : 20px;
+    margin : 0px;
+    border-bottom : 5px solid black;
+  }
+
+  .semi{
+    text-align : center;
+    display : inline;
+    font-size : 40px;
+    padding : 80px;
+    padding-top : 10px;
+    padding-bottom : 10px;
+    border : 5px solid black;
+    border-top : 0px;
+  }
+
+  #grid{
+    display : grid;
+    grid-template-columns : 1fr 1fr 1fr 1fr;
+  }
+
+  #story{
+    color : gray;
+  }
+
+  #skill{
+    color : gray;
+    border-left : 0px;
+    border-right : 0px;
+  }
+
+  #skin{
+    color : black;
+    border-right : 0px;
+  }
+
+  #trailer{
+    color : gray;
+  }
+
+  #name{
+    border : 5px solid black;
+  }
+
+  #ex{
+    display : grid;
+    grid-template-columns : 50px 1fr;
+    height : 50px;
+    border : 5px solid black;
+    border-left : 0px;
+    border-top : 0px;
+  }
+
+  strong{
+    text-align : center;
+    line-height : 50px;
+  }
+
+  #normal{
+    height : 25px;
+  }
+  </style>
+
 </head>
+
 <body>
-  <h1>유미 스킨</h1>
-  <a href="index.html">돌아가기</a><br><br><br>
+
+  <h1><a href="index.html">너랑 유미랑</a></h1>
+
+  <div id="grid">
+    <a href="1스토리.html" class="semi" id="story">스토리</a>
+    <a href="2스킬.html" class="semi" id="skill">스킬</a>
+    <a href="3스킨.html" class="semi" id="skin">스킨</a>
+    <a href="4트레일러.html" class="semi" id="trailer">트레일러</a>
+  </div><br>
+
   <p><strong>기본 스킨 : 6300BE / 975RP</strong><br><br>
   <img src="기본 스킨.jpg" width="350"></p><br>
   <p><strong>전투사관학교 유미 교장선생님 : 1350RP</strong><br><br>
@@ -18,5 +121,34 @@
   <img src="꿀잼 유미.jpg" width="350"></p><br>
   <p><strong>마녀 유미 : 1350RP</strong><br><br>
   <img src="마녀 유미.jpg" width="350"></p><br>
+
+  <p> <!-- 댓글 호스팅 -->
+      <div id="disqus_thread"></div>
+      <script>
+      (function() {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://yuumi.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+      })();
+      </script>
+      <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </p>
+
+  <p> <!-- 실시간 채팅 호스팅 -->
+    <script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/61cef7c0c82c976b71c43ead/1fo87fi79';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+    </script>
+  </p>
+
 </body>
+
 </html>
